@@ -8,15 +8,49 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <div class="mobile__wrapper">
+    <input class="toggler" type="checkbox" id="mobile__open" name="mobile__open">
+    <label class="burger" for="mobile__open">
+      <svg class="burger__icon">
+        <title>open mobile</title>
+        <use href="sprites.svg#burger"></use>
+      </svg>
+    </label>
+
+    <nav class="mobile__menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="#">Why Alivio</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Solutions</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Community</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Pricing</a>
+        </li>
+      </ul>
+      <label class="close" for="mobile__open">
+        <svg class="close__icon">
+          <title>close mobile menu</title>
+          <use href="sprites.svg#close"></use>
+        </svg>
+      </label>  
+    </nav>
+
+  </div>
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
         <a class="logo" href="#">
-          <svg class="logo">
+          <svg class="logo__icon">
             <title>logo</title>
             <use href="sprites.svg#logo"></use>
           </svg>
         </a>
+
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link" href="#">Why Alivio</a></li>
@@ -25,10 +59,12 @@
             <li class="nav__item"><a class="nav__link" href="#">Pricing</a></li>
           </ul>
         </nav>
+
         <div class="header__actions">
           <button type="button" class="btn btn-transparent">Sign In</button>
           <button type="button" class="btn btn-shadow">Start Trial</button>
         </div>
+
       </div>
     </div>
   </header>

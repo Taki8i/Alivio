@@ -6,8 +6,11 @@
   padding: 30px 0;
 }
 
-.logo {
+.logo{
   display: block;
+}
+
+.logo__icon {
   width: 81px;
   height: 23px;
 }
@@ -37,9 +40,14 @@
   transition: all 1s;
 }
 
+.btn-transparent:hover{
+outline: 2px solid #016448;
+}
+
 .btn-shadow:hover{
 text-shadow: 0px 0px 10px white;
 box-shadow: 0px 0px 10px 5px#017e5a;
+outline: 1px solid #016448;
 }
 
 
@@ -54,8 +62,22 @@ box-shadow: 0px 0px 10px 5px#017e5a;
 
   .btn{
     font-size: 1rem;
+    padding: 20px;
   }
 
+} 
+
+@media(max-width:800px){
+
+  .logo__icon{
+    margin-left: 50px;
+  }
+
+  .nav{
+    display: none;
+  }
 }
+
+
 
 

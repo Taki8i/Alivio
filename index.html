@@ -3,9 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Мой проект</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="logo" href="#">
+          <svg class="logo">
+            <title>logo</title>
+            <use href="sprites.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Why Alivio</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Solutions</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Community</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Pricing</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button type="button" class="btn btn-transparent">Sign In</button>
+          <button type="button" class="btn btn-shadow">Start Trial</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main"></main>
+  <footer class="footer"></footer>
 </body>
 </html>

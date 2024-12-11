@@ -1,0 +1,150 @@
+.about {
+  margin-bottom: 56px;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 220px;
+}
+
+.about__title {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 3.125rem;
+  line-height: 157%;
+  color: #01996d;
+  position: relative;
+}
+
+.about__title:before{
+  content: "How it works";
+  position: absolute;
+  top: -35px;
+  left: 0;
+  font-family: 'Lato';
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 157%;
+  color: #424242;
+}
+
+.about__description {
+  font-family: 'Lato';
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 150%;
+  color: #424242;
+  max-width: 671px;
+  padding-top: 20px;
+}
+
+.about__cards {
+  height: 1087px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card {
+  width: 420px;
+  height: 830px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 60px;
+}
+
+.card__second{
+  align-self: flex-end;
+}
+
+.card__third{
+  align-self: end;
+}
+
+.card__title {
+  font-family: 'Lato';
+  font-weight: 600;
+  font-size: 1.563rem;
+  color: #000000;
+  align-self: center;
+  position: relative;
+  
+}
+
+.card__title::before{
+  content: "01";
+  position: absolute;
+  top: -144px;
+  left: -116px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 150%;
+  text-align: center;
+  color: rgba(1, 153, 109, 0.2);
+  opacity: 0.8;
+}
+
+.card__title-second::before{
+  content: "02";
+}
+
+.card__title-third::before{
+  content: "03";
+  left: -140px;
+}
+
+.card__text {
+  font-family: 'Lato';
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 150%;
+  color: #424242;
+}
+
+@media (max-width:1320px){
+
+  .about__content{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__title{
+    max-width: 580px;
+  }
+
+  .about__title:before{
+    left: auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  .about__cards{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 200px ;
+  }
+
+  .card__second{
+    align-self: center;
+  }
+}
+
+@media(max-width:500px){
+  .card{
+    width: 100%;
+  }
+
+  .card__title:before{
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+}
+

@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 30px 0;
 }
 
 .logo{
@@ -13,6 +12,10 @@
 .logo__icon {
   width: 81px;
   height: 23px;
+}
+
+.nav{
+  padding: 30px 0px;
 }
 
 .nav__list {
@@ -51,7 +54,7 @@ outline: 1px solid #016448;
 }
 
 
-@media (max-width:1005px){
+@media (max-width:1020px){
   .nav__list{
     column-gap: 30px;
   }
@@ -69,6 +72,10 @@ outline: 1px solid #016448;
 
 @media(max-width:800px){
 
+  .header__wrapper{
+    padding: 15px 0px;
+  }
+
   .logo__icon{
     margin-left: 50px;
   }
@@ -76,6 +83,8 @@ outline: 1px solid #016448;
   .nav{
     display: none;
   }
+
+  
 }
 
 

@@ -1,5 +1,6 @@
 .success {
   background-color: #245852;
+  margin-bottom: 115px;
 }
 
 .success__wrapper {
@@ -92,5 +93,9 @@
   .success__content{
     align-items: center;
     margin-bottom: 50px;
+  }
+
+  .success__video{
+    width: 540px;
   }
 }

@@ -1,0 +1,23 @@
+.footer {
+  padding: 95px 0 135px;
+  background-color: #245852;
+}
+
+.footer__title {
+  font-family: 'Lato';
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+.footer__list {
+  font-family: 'Lato';
+  font-weight: 600;
+  font-size: 1.563rem;
+  color: #fff;
+}
+
+.footer__item {
+  margin-bottom: 60px;
+}
